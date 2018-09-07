@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/mp_back">
+
+    <Button
+        android:id="@+id/btPrev"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/prev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btPlay"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/play"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btPrev"
+        app:layout_constraintStart_toEndOf="@+id/btPrev" />
+
+    <Button
+        android:id="@+id/btStop"
+        android:layout_width="60dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/stop"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btPlay"
+        app:layout_constraintStart_toEndOf="@+id/btPlay" />
+
+    <Button
+        android:id="@+id/btNext"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/next"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btStop"
+        app:layout_constraintStart_toEndOf="@+id/btStop" />
+
+</android.support.constraint.ConstraintLayout>
